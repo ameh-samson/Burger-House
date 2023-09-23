@@ -118,19 +118,21 @@ main div p {
   transition: 1.3s;
 }
 
-.burgers-container {
+.checkItOut {
   text-align: center;
   justify-content: center;
   align-items: center;
 }
 
-.burgers-container h2 {
+.checkItOut h2 {
   margin: 40px 0;
   font-size: 3rem;
   font-weight: 400;
+  padding: 10px 0;
+  border-bottom: 2px solid #ffb411;
 }
 
-.burgers {
+.container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -142,16 +144,41 @@ main div p {
   padding: 40px 10px;
 }
 
-.burgers > h3 {
-  display: flex;
-  flex-direction: row;
-  color: red;
+.container1 {
+  width: 300px;
+  margin: 10px;
 }
 
-.burgers img {
+.container .burgerImg img {
   width: 100%;
   max-width: 350px;
   height: 300px;
   object-fit: cover;
   border: 1px solid var(--accent-color);
+}
+
+.burger-body p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--bg-color);
+  margin-top: 20px;
+  text-align: center;
+  border: 1px solid var(--accent-color);
+  border-radius: 5px;
+  background-color: var(--btn-color);
+  padding: 5px 10px;
+}
+
+.burger-body span {
+  color: #ff0000;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.burger-body p:hover {
+  padding: 5px;
+  border-radius: 5px;
+  color: var(--text-color);
+  background-color: black;
+  transition: 1.3s;
 }
