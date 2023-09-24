@@ -73,6 +73,7 @@ main {
   background-size: cover;
   background-repeat: no-repeat;
   padding: 0 10%;
+  border-bottom: 1px solid var(--accent-color);
 }
 
 main div {
@@ -128,10 +129,10 @@ main div p {
 
 .checkItOut h2 {
   margin: 40px;
+  color: var(--accent-color);
   font-size: var(--font-size2);
   font-weight: 400;
   padding: 10px 0;
-  border-bottom: 1px solid #ffb411;
 }
 
 .container {
@@ -229,4 +230,89 @@ footer h2 {
   text-transform: uppercase;
   color: var(--bg-color);
   text-align: center;
+}
+
+@media screen and (max-width: 667px) {
+  .icons {
+    margin: 0 10px;
+  }
+
+  main div h1 {
+    font-size: 3rem;
+  }
+
+  .cta {
+    font-size: 1rem;
+    padding: 6px 10px;
+  }
+
+  .aboutUs {
+    padding: 10px 10%;
+  }
+
+  .aboutUs .aboutUs-container h2,
+  .checkItOut h2 {
+    font-size: 2rem;
+  }
+  .aboutUs .aboutUs-container p {
+    margin: 2px 0;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  footer h2 {
+    font-size: 0.8rem;
+}
+
+@media screen and (max-width: 587px) {
+  .header {
+    display: block;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  nav {
+   display: block;
+    margin: 20px 0;
+  }
+
+  nav a,
+  .icon,
+  .logo {
+    font-size: 1rem;
+  }
+  
+  .burger-body p, h3 {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 475px){
+  main div h1 {
+    font-size: 2.5rem;
+  }
+  
+  P{
+    font-size: 0.9rem;
+  }
+
+  .container .burgerImg img {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .aboutUs .aboutUs-container h2,
+  .checkItOut h2 {
+    font-size: 1.5rem;
+  }
+
+
 }
